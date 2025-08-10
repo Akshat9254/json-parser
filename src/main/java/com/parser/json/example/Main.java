@@ -2,6 +2,7 @@ package com.parser.json.example;
 
 import com.parser.json.core.parser.JsonParser;
 import com.parser.json.example.model.User;
+import com.parser.json.example.model.UserRecord;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +23,8 @@ public class Main {
                 }
                 """;
         JsonParser parser = new JsonParser();
-        User user = parser.parse(json, User.class);
+        UserRecord user = parser.parse(json, UserRecord.class);
+//        User user = parser.parse(json, User.class);
         System.out.println(user);
     }
 }

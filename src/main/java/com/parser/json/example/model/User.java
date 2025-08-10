@@ -3,12 +3,15 @@ package com.parser.json.example.model;
 import java.util.List;
 
 public class User {
-    String name;
-    int age;
-    Address address;
-    List<Course> courses;
-    List<String> skills;
-    boolean isAdmin;
+    private String name;
+    private int age;
+    private Address address;
+    private List<Course> courses;
+    private List<String> skills;
+    private boolean isAdmin;
+
+    public User() {
+    }
 
     @Override
     public String toString() {
